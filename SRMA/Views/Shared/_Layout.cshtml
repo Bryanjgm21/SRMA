@@ -6,12 +6,6 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-    <meta charset="utf-8" />
-    <title>Scoxe - Admin & Dashboard Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="MyraStudio" name="author" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="~/Theme/assets/images/favicon.ico">
@@ -32,10 +26,10 @@
             <div class="navbar-header">
                 <!-- LOGO -->
                 <div class="navbar-brand-box d-flex align-items-left">
-                    <a href="index.html" class="logo">
+                    <a href="/Login/Login" class="logo">
                         <i class="mdi mdi-album"></i>
                         <span>
-                            Scoxe
+                            SRMA
                         </span>
                     </a>
 
@@ -68,37 +62,6 @@
                     </div>
 
                     <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item waves-effect waves-light" id="page-header-user-dropdown"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="" src="~/Theme/assets/images/flags/us.jpg" alt="Header Language" height="16">
-                            <span class="d-none d-sm-inline-block ml-1">English</span>
-                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="~/Theme/assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Spanish</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="~/Theme/assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">German</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="~/Theme/assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Italian</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="~/Theme/assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Russian</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item noti-icon waves-effect waves-light" id="page-header-notifications-dropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="mdi mdi-bell"></i>
@@ -109,10 +72,10 @@
                             <div class="p-3">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h6 class="m-0"> Notifications </h6>
+                                        <h6 class="m-0"> Notificaciones </h6>
                                     </div>
                                     <div class="col-auto">
-                                        <a href="#!" class="small"> View All</a>
+                                        <a href="#!" class="small">Ver todo</a>
                                     </div>
                                 </div>
                             </div>
@@ -122,8 +85,8 @@
                                         <img src="~/Theme/assets/images/users/avatar-2.jpg"
                                              class="mr-3 rounded-circle avatar-xs" alt="user-pic">
                                         <div class="media-body">
-                                            <h6 class="mt-0 mb-1">Samuel Coverdale</h6>
-                                            <p class="font-size-12 mb-1">You have new follower on Instagram</p>
+                                            <h6 class="mt-0 mb-1">Manuel Herrera</h6>
+                                            <p class="font-size-12 mb-1">Vacaciones 12/09/2023</p>
                                             <p class="font-size-12 mb-0 text-muted"><i class="mdi mdi-clock-outline"></i> 2 min ago</p>
                                         </div>
                                     </div>
@@ -134,11 +97,6 @@
                                             <span class="avatar-title bg-success rounded-circle">
                                                 <i class="mdi mdi-cloud-download-outline"></i>
                                             </span>
-                                        </div>
-                                        <div class="media-body">
-                                            <h6 class="mt-0 mb-1">Download Available !</h6>
-                                            <p class="font-size-12 mb-1">Latest version of admin is now available. Please download here.</p>
-                                            <p class="font-size-12 mb-0 text-muted"><i class="mdi mdi-clock-outline"></i> 4 hours ago</p>
                                         </div>
                                     </div>
                                 </a>
@@ -165,32 +123,24 @@
                     <div class="dropdown d-inline-block ml-2">
                         <button type="button" class="btn header-item waves-effect waves-light" id="page-header-user-dropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-3.jpg"
-                                 alt="Header Avatar">
-                            <span class="d-none d-sm-inline-block ml-1">Madhly</span>
+                            <span class="d-none d-sm-inline-block ml-1">Bryan</span>
                             <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
-                                <span>Inbox</span>
+                                <span>Bandeja</span>
                                 <span>
                                     <span class="badge badge-pill badge-info">3</span>
                                 </span>
                             </a>
-                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
-                                <span>Profile</span>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="/User/UserProfile">
+                                <span>Perfil</span>
                                 <span>
                                     <span class="badge badge-pill badge-warning">1</span>
                                 </span>
                             </a>
-                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
-                                Settings
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
-                                <span>Lock Account</span>
-                            </a>
                             <a class="dropdown-item d-flex align-items-center justify-content-between" href="/Login/Logout">
-                                <span>Log Out</span>
+                                <span>Cerrar sesion</span>
                             </a>
                         </div>
                     </div>
@@ -208,32 +158,14 @@
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled" id="side-menu">
-                        <li class="menu-title">Menu</li>
+                        <li class="menu-title">Menú</li>
 
                         <li>
-                            <a href="index.html" class="waves-effect"><i class="feather-airplay"></i><span class="badge badge-pill badge-info float-right">3</span><span>Dashboard</span></a>
+                            <a href="/Login/Login" class="waves-effect"><i class="feather-airplay"></i><span>Inicio</span></a>
                         </li>
 
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="feather-briefcase"></i><span>UI Elements</span></a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="~/Theme/pages/">Buttons</a></li>
-                                <li><a href="ui-cards.html">Cards</a></li>
-                                <li><a href="ui-carousel.html">Carousel</a>
-                                <li><a href="ui-embeds.html">Embeds</a>
-                                <li><a href="ui-general.html">General</a></li>
-                                <li><a href="ui-grid.html">Grid</a></li>
-                                <li><a href="ui-media-objects.html">Media Objects</a></li>
-                                <li><a href="ui-modals.html">Modals</a></li>
-                                <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                                <li><a href="ui-tabs.html">Tabs</a></li>
-                                <li><a href="ui-typography.html">Typography</a></li>
-                                <li><a href="ui-toasts.html">Toasts</a></li>
-                                <li><a href="ui-tooltips-popovers.html">Tooltips & Popovers</a></li>
-                                <li><a href="ui-scrollspy.html">Scrollspy</a></li>
-                                <li><a href="ui-spinners.html">Spinners</a></li>
-                                <li><a href="ui-sweetalerts.html">Sweet Alerts</a></li>
-                            </ul>
+                            <a href="/LoyaltyProgram/Loyalty" class="waves-effect"><i class="feather-bar-chart-2"></i><span>Programa de lealtad</span></a>
                         </li>
 
                         <li>
@@ -340,11 +272,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            2019 © Scoxe.
+                            2023 © SRMA.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-right d-none d-sm-block">
-                                Design & Develop by Myra
+                                Diseñado y desarrolaldo por SRMA.
                             </div>
                         </div>
                     </div>
