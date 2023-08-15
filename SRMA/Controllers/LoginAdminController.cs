@@ -6,39 +6,37 @@ using System.Web.Mvc;
 
 namespace SRMA.Controllers
 {
-    public class LoginController : Controller
+    public class LoginAdminController : Controller
     {
-        // GET: Login
+        // GET: LoginAdmin
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Logout()
+        public ActionResult LoginAdmin()
         {
-            return RedirectToAction("Index", "Login");
+            return RedirectToAction("Index", "LoginAdmin");
         }
 
-        public ActionResult Login()
+        public ActionResult LoginAdminAccess()
         {
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Admin", "Home");
         }
 
-        
-
-        // GET: Login/Details/5
+        // GET: LoginAdmin/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Login/Create
+        // GET: LoginAdmin/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Login/Create
+        // POST: LoginAdmin/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -54,13 +52,13 @@ namespace SRMA.Controllers
             }
         }
 
-        // GET: Login/Edit/5
+        // GET: LoginAdmin/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Login/Edit/5
+        // POST: LoginAdmin/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -76,13 +74,13 @@ namespace SRMA.Controllers
             }
         }
 
-        // GET: Login/Delete/5
+        // GET: LoginAdmin/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Login/Delete/5
+        // POST: LoginAdmin/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

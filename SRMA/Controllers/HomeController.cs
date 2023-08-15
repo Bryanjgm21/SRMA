@@ -13,16 +13,20 @@ namespace SRMA.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Admin()
         {
 
-            return RedirectToAction("Index","About");
+            return View();
+        }
+
+        public ActionResult LoginAdmin()
+        {
+
+            return RedirectToAction("LoginAdmin", "Login");
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
