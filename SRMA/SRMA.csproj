@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Controllers\LoginAdminController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\LoyaltyProgramController.cs" />
@@ -204,6 +205,8 @@
     <Content Include="Content\scss\plugins\css\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Theme\assets\images\users\LOGOma.png" />
+    <Content Include="Theme\assets\images\users\Logoma2.png" />
     <Content Include="Theme\plugins\autonumeric\autoNumeric-min.js" />
     <Content Include="Theme\plugins\bootstrap-colorpicker\bootstrap-colorpicker.min.css" />
     <Content Include="Theme\plugins\bootstrap-colorpicker\bootstrap-colorpicker.min.js" />
@@ -702,6 +705,9 @@
     <Content Include="Views\Employee\VacationAdd.cshtml" />
     <Content Include="Views\Employee\VacationRefund.cshtml" />
     <Content Include="Views\Employee\Absence.cshtml" />
+    <Content Include="Views\Inventory\Index.cshtml" />
+    <Content Include="Views\Inventory\Edit.cshtml" />
+    <Content Include="Views\Inventory\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
