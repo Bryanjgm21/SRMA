@@ -127,6 +127,7 @@
     <Compile Include="Controllers\LoyaltyProgramController.cs" />
     <Compile Include="Controllers\RecoverPWController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -702,6 +703,9 @@
     <Content Include="Views\Employee\VacationAdd.cshtml" />
     <Content Include="Views\Employee\VacationRefund.cshtml" />
     <Content Include="Views\Employee\Absence.cshtml" />
+    <Content Include="Views\Reservation\Index.cshtml" />
+    <Content Include="Views\Reservation\Details.cshtml" />
+    <Content Include="Views\Reservation\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
