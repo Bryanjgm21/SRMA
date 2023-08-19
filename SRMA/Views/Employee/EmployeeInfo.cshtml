@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Agregar empleado";
+    ViewBag.Title = "Informacion empleado";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
@@ -21,36 +21,34 @@
                                                 <i class="mdi mdi-album"></i> <b>SRMA</b>
                                             </a>
                                         </div>
-                                        <h1 class="h5 mb-1">Agregar empleado</h1>
+                                        <h1 class="h5 mb-1">Información empleado</h1>
                                         <form class="user">
-                                            <div class="form-group row">
-                                                <div class="col-sm-6 mb-3 mb-sm-0">
-                                                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nombre">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nombre" readonly>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Apellido">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Apellido" readonly>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <input type="number" class="form-control form-control-user" id="exampleID" placeholder="Cedula">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control form-control-user" id="exampleID" placeholder="Cedula" readonly>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <input type="number" class="form-control form-control-user" id="exampleAge" placeholder="Edad">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-user" id="exampleHireDate" placeholder="Fecha contratación" readonly>
                                                 </div>
+                                            <div class="form-group">
+                                                <input type="number" class="form-control form-control-user" id="exampleSalary" placeholder="Salario">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control form-control-user" id="exampleBdate" placeholder="Fecha nacimiento">
+                                                <input type="text" class="form-control form-control-user" id="examplePosition" placeholder="Posición">
                                             </div>
                                             <div class="form-group">
-                                                <input type="number" class="form-control form-control-user" id="exampleCellphone" placeholder="Número Celular">
+                                                <input type="number" class="form-control form-control-user" id="exampleSchedule" placeholder="Horario trabajo">
                                             </div>
                                             <div class="form-group">
-                                                <input type="number" class="form-control form-control-user" id="examplePhone" placeholder="Número telefono">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" class="form-control form-control-user" id="exampleEEmail" placeholder="Correo electronico">
+                                                <input type="email" class="form-control form-control-user" id="exampleVacation" placeholder="Vacaciones" readonly>
                                             </div>
 
-                                            <a href="/Employee/Index" class="btn btn-success btn-block waves-effect waves-light"> Crear empleado </a>
+                                            <a href="/Employee/Index" class="btn btn-success btn-block waves-effect waves-light"> Guardar Cambios </a>
                                             <a href="/Employee/Index" class="btn btn-info btn-block waves-effect waves-light"> Volver </a>
                                         </form>
                                         <!-- end row -->
@@ -67,4 +65,8 @@
     <!-- end page -->
 
 </body>
+
+
+
+
 

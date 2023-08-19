@@ -697,6 +697,11 @@
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Create.cshtml" />
     <Content Include="Views\Employee\Edit.cshtml" />
+    <Content Include="Views\Employee\EmployeeInfo.cshtml" />
+    <Content Include="Views\Employee\Vacation.cshtml" />
+    <Content Include="Views\Employee\VacationAdd.cshtml" />
+    <Content Include="Views\Employee\VacationRefund.cshtml" />
+    <Content Include="Views\Employee\Absence.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

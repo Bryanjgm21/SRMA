@@ -26,6 +26,31 @@ namespace SRMA.Controllers
             return View();
         }
 
+        public ActionResult EmployeeInfo()
+        {
+            return View();
+        }
+
+        public ActionResult Vacation()
+        {
+            return View();
+        }
+
+        public ActionResult VacationAdd()
+        {
+            return View();
+        }
+
+        public ActionResult VacationRefund()
+        {
+            return View();
+        }
+
+        public ActionResult Absence()
+        {
+            return View();
+        }
+
         // POST: Employee/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
