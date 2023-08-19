@@ -64,7 +64,7 @@
                                             <td>
                                                 <div>
                                                     <a href="/Inventory/Edit" class="btn btn-outline-secondary"> Editar </a>
-                                                    <a href="/Inventory/Index" class="btn btn-outline-danger "> Eliminar </a>
+                                                    <a href="/Inventory/Index" id="miBoton2" class="btn btn-outline-danger "> Eliminar </a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -258,6 +258,27 @@
         </div> <!-- container-fluid -->
     </div>
     </div>
+    <script>
+        const miBoton2 = document.getElementById("miBoton2");
+
+        miBoton2.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas eliminar producto?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: '¡Sí, eliminar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBoton2.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 

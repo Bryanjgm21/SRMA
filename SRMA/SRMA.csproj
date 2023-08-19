@@ -718,6 +718,9 @@
     <Content Include="Views\AdminReservation\Index.cshtml" />
     <Content Include="Views\AdminReservation\Create.cshtml" />
     <Content Include="Views\AdminReservation\Edit.cshtml" />
+    <Content Include="Views\Inventory\Create.cshtml" />
+    <Content Include="Views\Inventory\Edit.cshtml" />
+    <Content Include="Views\Inventory\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
