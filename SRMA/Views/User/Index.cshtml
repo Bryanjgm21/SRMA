@@ -44,8 +44,8 @@
                                                     <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="*********">
                                                 </div>
                                             </div>
-                                            <a href="/Login/Login" class="btn btn-success btn-block waves-effect waves-light"> Guardar cambios </a>
-                                            <a href="" class="btn btn-danger btn-block waves-effect waves-light"> Eliminar cuenta </a>
+                                            <a href="/Login/Login" id="miBoton" class="btn btn-success btn-block waves-effect waves-light"> Guardar cambios </a>
+                                            <a href="/Login/Logout" id="miBoton2" class="btn btn-danger btn-block waves-effect waves-light"> Eliminar cuenta </a>
 
                                         </form>
                                         <!-- end row -->
@@ -60,7 +60,48 @@
         <!-- end container -->
     </div>
     <!-- end page -->
+    <script>
+        const miBoton = document.getElementById("miBoton");
 
+        miBoton.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas guardar los cambios?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '¡Sí, guardar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBoton.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
+    <script>
+        const miBoton2 = document.getElementById("miBoton2");
+
+        miBoton2.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas eliminar la cuenta?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: '¡Sí, eliminar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBoton2.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 

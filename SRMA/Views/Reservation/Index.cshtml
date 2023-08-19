@@ -57,7 +57,8 @@
                                             </td>
                                             <td>
                                                 <div>
-                                                    <a href="/Reservation/Details" class="btn btn-outline-primary"> Información </a>
+                                                    <a href="/Reservation/Details" class="btn btn-outline-primary"> Editar </a>
+                                                    <a href="/Reservation/Index" id="miBoton" class="btn btn-outline-danger"> Eliminar </a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -79,8 +80,8 @@
                                             </td>
                                             <td>
                                                 <div>
-                                                    <a href="/Reservation/Details" class="btn btn-outline-primary"> Información </a>
-                                                 
+                                                    <a href="/Reservation/Details" class="btn btn-outline-primary"> Editar </a>
+                                                    <a href="/Reservation/Index" id="miBoton" class="btn btn-outline-danger"> Eliminar </a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -96,7 +97,27 @@
 
         </div> <!-- container-fluid -->
     </div>
-    </div>
+    <script>
+        const miBoton = document.getElementById("miBoton");
+
+        miBoton.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas eliminar la reservación?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6', 
+                confirmButtonText: '¡Sí, eliminar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBoton.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 

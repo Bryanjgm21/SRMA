@@ -47,7 +47,7 @@
                                                 <input type="text" class="form-control form-control-user" id="exampleVrequestEnd" placeholder="Fecha finalización">
                                             </div>
 
-                                            <a href="/Employee/Vacation" class="btn btn-success btn-block waves-effect waves-light"> Agregar solicitud </a>
+                                            <a href="/Employee/Vacation" id="miBoton" class="btn btn-success btn-block waves-effect waves-light"> Agregar solicitud </a>
                                             <a href="/Employee/Vacation" class="btn btn-info btn-block waves-effect waves-light"> Volver </a>
                                         </form>
                                         <!-- end row -->
@@ -62,7 +62,27 @@
         <!-- end container -->
     </div>
     <!-- end page -->
+    <script>
+        const miBoton = document.getElementById("miBoton");
 
+        miBoton.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas solicitar las vacaciones?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '¡Sí, solicitar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBoton.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
 </body>
 
 

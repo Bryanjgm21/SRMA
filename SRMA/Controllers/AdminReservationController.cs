@@ -6,27 +6,27 @@ using System.Web.Mvc;
 
 namespace SRMA.Controllers
 {
-    public class ReservationController : Controller
+    public class AdminReservationController : Controller
     {
-        // GET: Reservation
+        // GET: AdminReservation
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: Reservation/Details/5
-        public ActionResult Details()
+        // GET: AdminReservation/Details/5
+        public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Reservation/Create
+        // GET: AdminReservation/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Reservation/Create
+        // POST: AdminReservation/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -42,13 +42,13 @@ namespace SRMA.Controllers
             }
         }
 
-        // GET: Reservation/Edit/5
-        public ActionResult Edit(int id)
+        // GET: AdminReservation/Edit/5
+        public ActionResult Edit()
         {
             return View();
         }
 
-        // POST: Reservation/Edit/5
+        // POST: AdminReservation/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -64,13 +64,13 @@ namespace SRMA.Controllers
             }
         }
 
-        // GET: Reservation/Delete/5
+        // GET: AdminReservation/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Reservation/Delete/5
+        // POST: AdminReservation/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

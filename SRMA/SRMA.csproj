@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminReservationController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InventoryController.cs" />
@@ -206,6 +207,11 @@
     <Content Include="Content\scss\plugins\css\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Theme\assets\images\media\buf.jpg" />
+    <Content Include="Theme\assets\images\media\buffete.jpg" />
+    <Content Include="Theme\assets\images\media\casado.jpg" />
+    <Content Include="Theme\assets\images\media\pollo caribeño.jpg" />
+    <Content Include="Theme\assets\images\media\tamales.jpg" />
     <Content Include="Theme\assets\images\users\LOGOma.png" />
     <Content Include="Theme\assets\images\users\Logoma2.png" />
     <Content Include="Theme\plugins\autonumeric\autoNumeric-min.js" />
@@ -709,6 +715,9 @@
     <Content Include="Views\Reservation\Index.cshtml" />
     <Content Include="Views\Reservation\Details.cshtml" />
     <Content Include="Views\Reservation\Create.cshtml" />
+    <Content Include="Views\AdminReservation\Index.cshtml" />
+    <Content Include="Views\AdminReservation\Create.cshtml" />
+    <Content Include="Views\AdminReservation\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

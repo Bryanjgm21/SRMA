@@ -61,7 +61,7 @@
                                                     <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repite la contraseña">
                                                 </div>
                                             </div>
-                                            <a href="/Login/Logout" class="btn btn-success btn-block waves-effect waves-light"> Registrar cuenta </a>
+                                            <a href="/Login/Logout" id="miBoton" class="btn btn-success btn-block waves-effect waves-light"> Registrar cuenta </a>
 
                                             <div class="text-center mt-4">
                                                 <h5 class="text-muted font-size-16">Inicia sesion utilizando:</h5>
@@ -101,7 +101,27 @@
         <!-- end container -->
     </div>
     <!-- end page -->
+    <script>
+        const miBoton = document.getElementById("miBoton");
 
+        miBoton.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas registrar tu cuenta?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '¡Sí, registrar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBoton.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 
