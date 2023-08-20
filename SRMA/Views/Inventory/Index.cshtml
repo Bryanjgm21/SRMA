@@ -241,7 +241,11 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <a href="/Inventory/Index" id="miBoton" class="btn btn-warning "> Generar reporte </a>
+                                        <p>
+                                            Generar Reporte:
+                                            <button href="/Inventory/Index" id="miBotonPDF" class="btn btn-warning">PDF</button>
+                                            <button href="/Inventory/Index" id="miBotonEx" class="btn btn-warning">Excel</button>
+                                        </p>
                                     </tbody>
                                 </table>
                                 <div>
@@ -296,6 +300,48 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     window.location.href = miBoton2.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
+    <script>
+        const miBotonPDF = document.getElementById("miBotonPDF");
+
+        miBotonPDF.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas generar el reporte del inventario en PDF?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '¡Sí, generar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBotonPDF.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
+    <script>
+        const miBotonEx = document.getElementById("miBotonEx");
+
+        miBotonEx.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas generar el reporte del inventario en Excel?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '¡Sí, generar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBotonEx.getAttribute('href'); // Redireccionar si se confirma
                 }
             });
         });
