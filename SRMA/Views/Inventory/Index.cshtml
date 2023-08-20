@@ -241,7 +241,7 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <a href="/Inventory/Index" class="btn btn-warning "> Generar reporte </a>
+                                        <a href="/Inventory/Index" id="miBoton" class="btn btn-warning "> Generar reporte </a>
                                     </tbody>
                                 </table>
                                 <div>
@@ -258,6 +258,27 @@
         </div> <!-- container-fluid -->
     </div>
     </div>
+    <script>
+        const miBoton = document.getElementById("miBoton");
+
+        miBoton.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevenir la redirección predeterminada del enlace
+
+            Swal.fire({
+                title: '¿Deseas generar el reporte del inventario?',
+                icon: 'question',
+                showCancelButton: true,
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '¡Sí, generar!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = miBoton.getAttribute('href'); // Redireccionar si se confirma
+                }
+            });
+        });
+    </script>
     <script>
         const miBoton2 = document.getElementById("miBoton2");
 
