@@ -201,13 +201,14 @@
             event.preventDefault(); // Prevenir la redirección predeterminada del enlace
 
             Swal.fire({
-                title: '¿Deseas canjear 1500 puntos?',
+                title: '¿Desear canjear el codigo de descuento?',
+                text: 'XRHEV412',
                 icon: 'question',
                 showCancelButton: true,
                 cancelButtonText: 'Cancelar',
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: '¡Sí, Generar descuento!'
+                confirmButtonText: '¡Sí, Canjear descuento!'
             }).then((result) => {
                 if (result.isConfirmed) {
                     window.location.href = miBoton.getAttribute('href'); // Redireccionar si se confirma
